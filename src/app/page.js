@@ -1,71 +1,74 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-white">
-      <header className="w-full fixed top-0 bg-black bg-opacity-80 shadow">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-cozy text-gray-800">
+      <header className="w-full fixed top-0 bg-white shadow">
         <nav className="container mx-auto flex justify-between items-center p-4">
-          <div className="text-xl font-bold text-neon">Dreamy</div>
+          <div className="text-xl font-bold text-primary">Dreamy Environments</div>
           <ul className="flex space-x-8">
             <li>
-              <a href="#about" className="hover:text-neon">About Us</a>
+              <a href="#about" className="hover:text-secondary">About Us</a>
             </li>
             <li>
-              <a href="#products" className="hover:text-neon">Products</a>
+              <a href="#products" className="hover:text-secondary">Products</a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-neon">Contact</a>
+              <a href="#contact" className="hover:text-secondary">Contact</a>
             </li>
           </ul>
         </nav>
       </header>
 
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center mt-20">
-        <section id="hero" className="h-screen bg-cyberpunk-gradient flex items-center justify-center">
+        <section id="hero" className="h-screen flex items-center justify-center">
           <div>
-            <h1 className="text-5xl font-bold text-neon">Revolutionizing Home Textiles</h1>
-            <p className="mt-4 text-lg text-gray-300">Quality and elegance in every thread.</p>
-            <a href="#products" className="mt-8 inline-block border-neon text-neon border-2 px-6 py-3 rounded hover-bg-neon">
-              Discover Our Products
+            <h1 className="text-5xl font-bold text-primary">Cozy Comfort for Your Home</h1>
+            <p className="mt-4 text-lg text-secondary">Experience the warmth and softness in every thread.</p>
+            <a href="https://www.amazon.com/dp/YOUR_PRODUCT_ID" className="mt-8 inline-block bg-button text-white px-6 py-3 rounded hover-bg-button">
+              Shop on Amazon
             </a>
           </div>
         </section>
 
-        <section id="about" className="py-20 bg-black bg-opacity-90">
+        <section id="about" className="py-20 bg-white">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-neon mb-6">About Us</h2>
-            <p className="text-lg text-gray-300">
-              At Dreamy, we are committed to offering high-quality textile products that combine functionality and elegant design.
+            <h2 className="text-4xl font-bold text-primary mb-6">About Us</h2>
+            <p className="text-lg text-secondary">
+              At Dreamy Environments, our mission is to bring warmth and comfort into every home with our carefully crafted products.
             </p>
           </div>
         </section>
 
-        <section id="products" className="py-20 bg-black bg-opacity-80">
+        <section id="products" className="py-20">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-neon mb-6">Our Products</h2>
+            <h2 className="text-4xl font-bold text-primary mb-6">Our Products</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-cyberpunk-gradient shadow rounded p-4 border-neon border-2">
-                <h3 className="text-2xl font-bold text-neon mb-2">Hair Towel Turban</h3>
-                <p className="text-gray-300">
-                  Ultra-soft and absorbent, perfect for quick and comfortable drying.
+              <div className="bg-white shadow rounded p-4 border-cozy border-2">
+                <h3 className="text-2xl font-bold text-secondary mb-2">Hair Towel Turban</h3>
+                <p className="text-secondary">
+                  Ultra-soft and absorbent, perfect for quick and comfortable drying. Available now on Amazon.
                 </p>
+                <a href="https://www.amazon.com/dp/YOUR_PRODUCT_ID" className="mt-4 inline-block bg-button text-white px-4 py-2 rounded hover-bg-button">
+                  Buy on Amazon
+                </a>
               </div>
-              <div className="bg-cyberpunk-gradient shadow rounded p-4 border-neon border-2">
-                <h3 className="text-2xl font-bold text-neon mb-2">More Products Coming Soon</h3>
-                <p className="text-gray-300">
-                  We are developing new textile products for your home. Stay tuned!
+              <div className="bg-white shadow rounded p-4 border-cozy border-2">
+                <h3 className="text-2xl font-bold text-secondary mb-2">More Products Coming Soon</h3>
+                <p className="text-secondary">
+                  Stay tuned for our upcoming range of cozy home textiles.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="contact" className="py-20 bg-black bg-opacity-90">
+        <section id="contact" className="py-20 bg-white">
           <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-neon mb-6">Contact</h2>
+            <h2 className="text-4xl font-bold text-primary mb-6">Contact Us</h2>
             <form className="flex flex-col space-y-4 max-w-md mx-auto">
-              <input type="text" placeholder="Name" className="p-3 border-neon border-2 bg-black text-white rounded"/>
-              <input type="email" placeholder="Email" className="p-3 border-neon border-2 bg-black text-white rounded"/>
-              <textarea placeholder="Message" className="p-3 border-neon border-2 bg-black text-white rounded h-32"></textarea>
-              <button className="bg-neon text-black px-6 py-3 rounded hover-bg-neon" type="submit">
+              <input type="text" placeholder="Name" className="p-3 border-cozy border-2 bg-white text-gray-800 rounded"/>
+              <input type="email" placeholder="Email" className="p-3 border-cozy border-2 bg-white text-gray-800 rounded"/>
+              <textarea placeholder="Message" className="p-3 border-cozy border-2 bg-white text-gray-800 rounded h-32"></textarea>
+              <button className="bg-button text-white px-6 py-3 rounded hover-bg-button" type="submit">
                 Send Message
               </button>
             </form>
@@ -73,9 +76,9 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="w-full bg-black bg-opacity-80 py-6">
+      <footer className="w-full bg-white py-6">
         <div className="container mx-auto text-center">
-          <p className="text-gray-500">© 2024 Dreamy. All rights reserved.</p>
+          <p className="text-gray-500">© 2024 Dreamy Environments. All rights reserved.</p>
         </div>
       </footer>
     </div>

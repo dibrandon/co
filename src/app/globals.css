@@ -31,21 +31,32 @@ body {
     text-wrap: balance;
   }
 }
-
 @layer utilities {
-  .bg-cyberpunk-gradient {
-    background: linear-gradient(135deg, #0d3b66, #0a2342);
-    /* #0d3b66 es un azul oscuro, y #0a2342 es un casi negro */
+  .bg-cozy {
+    background-color: #FFFFFF; /* Fondo blanco */
   }
-  .text-neon {
-    color: #00ffcc;
-    /* Verde neón */
+
+  .text-primary {
+    color: #8B4513; /* Marrón otoñal */
   }
-  .border-neon {
-    border-color: #00ffcc;
+
+  .text-secondary {
+    color: #D2691E; /* Tono cálido anaranjado */
   }
-  .hover-bg-neon:hover {
-    background-color: #00ffcc;
-    color: #0a2342;
+
+  .text-accent {
+    color: #CD853F; /* Tono suave, tipo bronce */
+  }
+
+  .border-cozy {
+    border-color: #F4A460; /* Arena cálido */
+  }
+
+  .bg-button {
+    background-color: #D2691E; /* Mismo anaranjado cálido para botones */
+  }
+
+  .hover-bg-button:hover {
+    background-color: #CD853F; /* Cambio a bronce suave en hover */
   }
 }
