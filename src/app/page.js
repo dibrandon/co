@@ -42,7 +42,7 @@ export default function Home() {
           <div className="container mx-auto">
             <h2 className="text-4xl font-bold text-primary mb-6">Our Products</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="bg-white shadow rounded p-4 border-cozy border-2">
+              <div className="bg-white shadow rounded p-4 border-2">
                 <h3 className="text-2xl font-bold text-secondary mb-2">Hair Towel Turban</h3>
                 <p className="text-secondary">
                   Ultra-soft and absorbent, perfect for quick and comfortable drying. Available now on Amazon.
@@ -51,12 +51,17 @@ export default function Home() {
                   Buy on Amazon
                 </a>
               </div>
-              <div className="bg-white shadow rounded p-4 border-cozy border-2">
+              <div className="bg-white shadow rounded p-4 border-2">
                 <h3 className="text-2xl font-bold text-secondary mb-2">More Products Coming Soon</h3>
                 <p className="text-secondary">
                   Stay tuned for our upcoming range of cozy home textiles.
-                </p>
+                </p><a href="#contact" className="mt-4 inline-block bg-button text-white px-4 py-2 rounded hover-bg-button">
+  Contact Us
+</a>
+
+                
               </div>
+              
             </div>
           </div>
         </section>
