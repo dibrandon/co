@@ -31,3 +31,21 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer utilities {
+  .bg-cyberpunk-gradient {
+    background: linear-gradient(135deg, #0d3b66, #0a2342);
+    /* #0d3b66 es un azul oscuro, y #0a2342 es un casi negro */
+  }
+  .text-neon {
+    color: #00ffcc;
+    /* Verde neón */
+  }
+  .border-neon {
+    border-color: #00ffcc;
+  }
+  .hover-bg-neon:hover {
+    background-color: #00ffcc;
+    color: #0a2342;
+  }
+}
