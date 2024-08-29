@@ -17,11 +17,19 @@ export default function Navbar() {
 
   const handleScroll = () => {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Hide the navbar on scroll down and close the menu
     if (scrollTop > lastScrollTop) {
-      setIsVisible(false); // Scrolling down
+      setIsVisible(false);
     } else {
-      setIsVisible(true); // Scrolling up
+      setIsVisible(true);
     }
+
+    // Close the menu on any scroll action
+    if (isOpen) {
+      setIsOpen(false);
+    }
+
     setLastScrollTop(scrollTop);
   };
 
@@ -30,7 +38,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollTop]);
+  }, [lastScrollTop, isOpen]);
 
   return (
     <header className={`w-full fixed top-0 bg-white shadow transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
