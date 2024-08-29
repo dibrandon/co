@@ -1,23 +1,6 @@
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-cozy text-gray-800">
-      <header className="w-full fixed top-0 bg-white shadow">
-        <nav className="container mx-auto flex justify-between items-center p-4">
-          <div className="text-xl font-bold text-primary">Dreamy Environments</div>
-          <ul className="flex space-x-8">
-            <li>
-              <a href="#about" className="hover:text-secondary">About Us</a>
-            </li>
-            <li>
-              <a href="#products" className="hover:text-secondary">Products</a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-secondary">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center mt-20">
         <section id="hero" className="h-screen flex items-center justify-center">
           <div>
@@ -55,13 +38,11 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-secondary mb-2">More Products Coming Soon</h3>
                 <p className="text-secondary">
                   Stay tuned for our upcoming range of cozy home textiles.
-                </p><a href="#contact" className="mt-4 inline-block bg-button text-white px-4 py-2 rounded hover-bg-button">
-  Contact Us
-</a>
-
-                
+                </p>
+                <a href="#contact" className="mt-4 inline-block bg-button text-white px-4 py-2 rounded hover-bg-button">
+                  Contact Us
+                </a>
               </div>
-              
             </div>
           </div>
         </section>
