@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, useEffect } from 'react';
 
@@ -43,20 +43,20 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex space-x-8 text-primary">
           <li>
-            <a href="#about" className="hover:text-secondary" onClick={closeMenu}>About Us</a>
+            <a href="#about" className="hover:text-secondary">About Us</a>
           </li>
           <li>
-            <a href="#products" className="hover:text-secondary" onClick={closeMenu}>Products</a>
+            <a href="#products" className="hover:text-secondary">Products</a>
           </li>
           <li>
-            <a href="#contact" className="hover:text-secondary" onClick={closeMenu}>Contact</a>
+            <a href="#contact" className="hover:text-secondary">Contact</a>
           </li>
         </ul>
       </nav>
       <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
-        <ul className="flex flex-col space-y-2 bg-white p-4">
+        <ul className="flex flex-col items-end space-y-2 bg-white p-4 text-primary">
           <li>
             <a href="#about" className="hover:text-secondary" onClick={closeMenu}>About Us</a>
           </li>
