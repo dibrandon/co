@@ -56,7 +56,7 @@ export default function Navbar() {
             <a href="#about" className="hover:text-secondary">About Us</a>
           </li>
           <li>
-            <a href="#products" className="hover:text-secondary">Products</a>
+            <a href="#products" className="hover:text-secondary">Our Products</a>
           </li>
           <li>
             <a href="#contact" className="hover:text-secondary">Contact</a>
