@@ -43,7 +43,7 @@ export default function Navbar() {
   return (
     <header className={`w-full fixed top-0 bg-white shadow transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
       <nav className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-xl font-bold text-primary"><a href='#hero'>Dreamy Environments</a></div>
+        <div className="text-xl font-bold text-primary"><a href='#hero'>Dreamy</a></div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="text-primary focus:outline-none">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
